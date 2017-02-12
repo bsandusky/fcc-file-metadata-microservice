@@ -1,16 +1,18 @@
 {
-  "name": "bp-node-express-mocha-chai",
+  "name": "file-metadata-microservice",
   "version": "1.0.0",
-  "description": "Node.js application boilerplate running Express with Mocha, Chai, and Nodemon",
+  "description": "FCC File Metadata Parser Service",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha && ./node_modules/nodemon/bin/nodemon.js app.js",
+    "test": "./node_modules/mocha/bin/mocha --watch test",
     "start": "node app.js"
   },
   "author": "bsandusky",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "mongodb": "^2.2.22",
+    "multer": "^1.3.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
