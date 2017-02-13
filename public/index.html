@@ -13,12 +13,16 @@
             <h1>FCC File Metadata Microservice</h1>
         </div>
         
-        <div class="row">
-            <label for="fileUpload" class="button">Upload File</label>
-            <input type="file" id="fileUpload" class="show-for-sr">
-        </div>
-        
-        <div class="row results"></div>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="medium-3 columns">
+                        <input type="file" name="file">
+                        <input type="submit" class="button">
+                    </div>
+                    <div class="medium-9 columns">
+                    </div>
+                </div>
+            </form>
         
          <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
